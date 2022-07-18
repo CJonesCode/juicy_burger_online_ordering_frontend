@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Juicy Juicy Juicy Burgers!</title>
+</head>
+<body>
+    <div id="overlayDiv" class="overlay">
+        <div class="loader"></div>
+    </div>
+    <div>
+        <img id="headerimg" src="images/Logo.png">
+    </div>
+    <h2></h2>
+    <div id="menudiv"></div>
+
+    <div id="cartdiv" class="shopping-cart">
+        <fieldset>
+        <legend>CART</legend>
+        <div id="cartitems"></div>
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div id="cart-subtotal" class="totals-value">0.00</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div id="cart-tax" class="totals-value">0.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div id="cart-total" class="totals-value">0.00</div>
+            </div>
+        </div>
+        <button id="checkout-button" class="btn" role="button" onclick="checkout()">Checkout</button>
+        </fieldset>
+    </div>
+
+</body>
+</html>
